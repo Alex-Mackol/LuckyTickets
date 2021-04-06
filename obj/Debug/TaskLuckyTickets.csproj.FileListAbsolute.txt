@@ -1,0 +1,7 @@
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\obj\Debug\TaskLuckyTickets.csprojAssemblyReference.cache
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\obj\Debug\TaskLuckyTickets.csproj.CoreCompileInputs.cache
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\bin\Debug\TaskLuckyTickets.exe.config
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\bin\Debug\TaskLuckyTickets.exe
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\bin\Debug\TaskLuckyTickets.pdb
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\obj\Debug\TaskLuckyTickets.exe
+D:\SoftElemenatyTasks\TaskLuckyTickets\TaskLuckyTickets\obj\Debug\TaskLuckyTickets.pdb
