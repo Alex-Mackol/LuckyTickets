@@ -26,36 +26,31 @@ namespace TaskLuckyTickets.Models.ClassModels
         public int CountLuckyTicketsInInterval()
         {
             AmountOfLuckyTickets = 0;
-            int a, b, c, d, f, g;
-            string startInString, lastInString;
-            int sumOddPart = 0, sumEvenPart = 0;
+            int sumOddPart = 0, sumEvenPart = 0, currentNum;
 
-            for (int i = 123456; i <= LastNumber; i++)
+            for (int i = StartNumber; i <= LastNumber; i++)
             {
-                startInString = i.ToString();
-
-                for (int j = 0; j < startInString.Length; j++)
+                sumOddPart = 0;
+                sumEvenPart = 0;
+                currentNum = i;
+                for (int j = 0; j < 6; j++)
                 {
-                    if(j%2==0)
+                    if (currentNum % 10 % 2 == 0)
                     {
-                        sumOddPart += startInString[j];
+                        sumOddPart += currentNum % 10;
                     }
                     else
                     {
-                        sumEvenPart += startInString[j];
+                        sumEvenPart += currentNum % 10;
                     }
+                    currentNum /= 10;
                 }
-
-                //a = i / 100000;
-                //b = (i % 100000) / 10000;
-                //c = (i % 10000) / 1000;
-                //d = (i % 1000) / 100;
-                //f = (i % 100) / 10;
-                //g = i % 10;
-
-                //if (a + c + f == b + d + g)
-                //    AmountOfLuckyTickets++;
+                if (sumEvenPart == sumOddPart)
+                {
+                    AmountOfLuckyTickets++;
+                }
             }
+
             return AmountOfLuckyTickets;
         }
     }
