@@ -27,17 +27,34 @@ namespace TaskLuckyTickets.Models.ClassModels
         {
             AmountOfLuckyTickets = 0;
             int a, b, c, d, f, g;
-            for (int i = StartNumber; i <= LastNumber; i++)
-            {
-                a = i / 100000;
-                b = (i % 100000) / 10000;
-                c = (i % 10000) / 1000;
-                d = (i % 1000) / 100;
-                f = (i % 100) / 10;
-                g = i % 10;
+            string startInString, lastInString;
+            int sumOddPart = 0, sumEvenPart = 0;
 
-                if (a + c + f == b + d + g)
-                    AmountOfLuckyTickets++;
+            for (int i = 123456; i <= LastNumber; i++)
+            {
+                startInString = i.ToString();
+
+                for (int j = 0; j < startInString.Length; j++)
+                {
+                    if(j%2==0)
+                    {
+                        sumOddPart += startInString[j];
+                    }
+                    else
+                    {
+                        sumEvenPart += startInString[j];
+                    }
+                }
+
+                //a = i / 100000;
+                //b = (i % 100000) / 10000;
+                //c = (i % 10000) / 1000;
+                //d = (i % 1000) / 100;
+                //f = (i % 100) / 10;
+                //g = i % 10;
+
+                //if (a + c + f == b + d + g)
+                //    AmountOfLuckyTickets++;
             }
             return AmountOfLuckyTickets;
         }
